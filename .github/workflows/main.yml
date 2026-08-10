@@ -14,5 +14,4 @@ jobs:
         run: |
           COMPILER=$(root-config --cxx)
           FLAGS=$(root-config --cflags --libs)
-          $COMPILER -g -03 -Wall -Wextra -Wpedantic -o skim skim.cxx
-$FLAGS
+          $COMPILER -g -03 -Wall -Wextra -Wpedantic -o skim skim.cxx $FLAGS
